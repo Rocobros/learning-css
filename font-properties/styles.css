@@ -1,0 +1,102 @@
+/* 
+Font size
+
+-ej-
+font-size: 1px
+
+Static sizing-
+1px - pixel - 1/96th inch - 0.26 mm
+1pt - point - 1/72nd inch - 0.35 mm
+
+Relative sizing-
+1em - 100% of parent
+1rem - 100% of root
+*/
+
+#pixel{
+    font-size: 20px;
+}
+
+#point{
+    font-size: 20pt;
+}
+
+#em{
+    font-size: 1em;
+}
+
+#rem{
+    font-size: 1rem;
+}
+
+footer{
+    font-size: 12pt;
+}
+
+html{
+    font-size: xx-large;
+}
+
+/* Font Weight
+
+3 types-
+
+bold
+lighter / bolder - Relative to Parent
+number - 100(light) to 900(bold)
+
+*/
+
+#bold{
+    font-weight: bold; 
+}
+
+#bolder{
+    font-weight: bold;
+}
+
+#lighter{
+    font-weight: lighter;
+}
+
+#bolding{
+    font-weight: 900;
+}
+
+/* 
+Font family
+
+font-family: typeface, generic type
+
+ejs-
+font-family: Helvetica, sans-serif
+font-family: "Times New Roman", serif
+*/
+
+#helvetica{
+    font-family: Helvetica, sans-serif;
+}
+
+#arial{
+    font-family: Arial, sans-serif;
+}
+
+#serif{
+    font-family: serif;
+}
+
+#sans{
+    font-family: sans-serif;
+}
+
+#cursive{
+    font-family: cursive;
+}
+
+#monospace{
+    font-family: monospace;
+}
+
+#fantasy{
+    font-family: fantasy;
+}

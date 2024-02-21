@@ -1,0 +1,44 @@
+/* 
+Cascading styles-
+
+Order of styling
+
+1st: Position-
+The lowest one is the one applied
+ex:
+li{
+    color: red;
+    color: green;
+}
+
+li{
+    color: blue; <- Style applied
+}
+
+2nd: Specifity-
+1st. HTML tag
+2nd. Class selector
+3rd. Atributes
+4th. Id selector
+
+ex: <li id="id" class="class" draggable>
+
+li {color:blue}
+.class {color:red}
+li [draggable] {color:purple}
+#id {color:orange} <- Style applied
+
+3rd: Type-
+1st. External file
+2nd. <style> tag
+3rd. in-line styles
+
+4th: Importance- 
+"!important" keyword
+
+ex:
+body{
+    color:red
+    color: green !important
+}
+*/

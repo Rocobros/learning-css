@@ -1,0 +1,48 @@
+/* 
+Grouping combiner - Comma
+selector , selector {}
+*/
+
+h1, h2 {
+    color: blueviolet;
+}
+
+/* 
+Child combiner - Less than
+Apply to direct child
+parent > child {}
+*/
+
+.box > p {
+    color: firebrick
+}
+
+/* 
+Descendant combiner - Space
+Apply to a descendant
+selector selector {}
+*/
+
+.box li {
+    color: blue;
+}
+
+/* 
+Chaining combiner - No space - Specific
+Apply where ALL selectors are true
+selectorselector {}
+*/
+
+li.done{
+    color: seagreen;
+}
+
+/* 
+Combining combiners
+Mix combiners
+selector selectorselector {}
+*/
+
+ul p.done {
+    font-size: 0.5rem;
+}

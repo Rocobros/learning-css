@@ -1,0 +1,26 @@
+/* 
+? Position
+
+1. Static - HTML Default
+2. Relative
+3. Absolute
+4. Fixed
+
+*Static Positioning-
+Normal flow
+At the end of the previous element
+
+todo position: static;
+
+*Relative Positioning-
+Position relative to its default position
+
+position: relative;
+
+*Absolute Positioning-
+Position relative to nearest positioned ancestor or top left corner of webpage
+
+position: absolute
+
+!This position takes the element out of the workflow
+*/
