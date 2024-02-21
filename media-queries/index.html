@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        /* 
+        4 ways to make a website responsive:
+        1. Media Queries
+        2. CSS Grid
+        3. CSS Flexbox
+        4. External Frameworks
+        */
+
+        /* Media Queries 
+        @media (max-width: 600px) {
+            CSS for screens below or equal to 600px wide 
+        }
+        */
+        body{
+            background-color: aquamarine;
+        }
+
+        @media (min-width: 319px) and (max-width: 480px){
+            body{
+                background-color: lightsalmon;
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 1200px){
+            body{
+                background-color: powderblue;
+            }
+        }
+
+        @media (min-width: 1201px) and (max-width: 1600px){
+            body{
+                background-color: limegreen;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

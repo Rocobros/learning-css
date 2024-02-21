@@ -23,4 +23,8 @@ Position relative to nearest positioned ancestor or top left corner of webpage
 position: absolute
 
 !This position takes the element out of the workflow
+
+*Fixed Positioning-
+Position relative to top left corner of browser window
+It doesnt move when scrolling
 */

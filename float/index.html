@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        /* Float - Alows elements to wrap around others */
+
+        /* ex: img has display: block by default but using float you can make the text wrap the image */
+        img {
+            float: left;
+            /* float: right; */
+            height: 80px;
+            width: 80px;
+        }
+        footer{
+            /* clear: left makes the element not follow the float left property of img */
+            clear: left;
+            /* clear: right; */
+            /* clear: both; */
+        }
+        /* Float has unexpected result when trying to recreate complex displays and in modern web dev it is not used anymore */
+    </style>
+</head>
+<body>
+    <img src="./captura.png" alt="">
+    <p>Lorem ip dolor sit amet consectetur adipisicing elit. Veritatis nobis placeat totam dolorem aspernatur eum voluptate illum, doloremque eaque non quod! Recusandae a exercitationem perspiciatis veniam impedit nemo, corrupti similique!</p>
+    <footer>Copyright Bla Bla</footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        /* Display inline - Occupies only the space of the element / Next element will go in the same line until the end of screen
+        Cant change width and height, it sets to the size of the element
+        */
+        h2{
+            display: inline;
+        }
+        /* Display block - Occupies the full width / Next element will go under */
+        .red{
+           background-color: red;
+           height: 200px;
+           width: 200px;
+           display: block;
+        }
+        /* Display inline-block - Can set height and width and can have elements in the same line*/
+
+        .green{
+            background-color: green;
+           height: 200px;
+           width: 200px;
+           display: inline;
+        }
+
+        .blue{
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+        }
+
+        p{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<p class="red">Red Paragraph</p>
+<p class="green">Green Paragraph</p>
+<p class="blue">Blue Paragraph</p>
+</body>
+</html>
