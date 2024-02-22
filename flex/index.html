@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 70vh;
+            /* Display flex does not follow the display properties rules and also all its children  
+            display: flex creates a block and occupies the full width, inline-flex make it occupy the width of the content*/
+            display: flex;
+            /* flex-direction: row; by default (main-axis: left to right or x axis and cross-axis is perpendicular to the main) */
+            /* flex-direction: column; (main-axis: top to bottom or y axis)*/
+            /* The main and cross axis matter because of flex-basis */
+            flex-direction: row;
+            border: 5px solid gold;
+            color: white;
+            /* flex-wrap by default nowrap, if the children exceed the width it doesnt go to the next line */
+            /* wrap makes items go to the next line when they dont fit */
+            flex-wrap: nowrap;
+            /* justify-content: flex-start (to the left), flex-end (right),
+            center, 
+            space-between (spacing equally between each item, first and last items all the way to the edge) 
+            space-around (first and last item have gap distributed equal to the item between the center items)
+            space-evenly (all gaps are the same event the first and last) */
+            justify-content: space-evenly;
+            /* align-items by default stretch, flex-start (to the top), flex-end (to the bottom), center, baseline, stretch 
+            Determines how items as a whole are aligned within the container*/
+            align-items: center;
+
+            /* Only works when wrap is used, spacing between lines, does not work when there is only one line
+            Determines the spacing between lines*/
+            align-content: center;
+        }
+
+        div > * {
+            /* flex-basis
+            Indicates the width or height depending on the flex-direction
+            if the direction is row it will define width and if it is column the height
+            This depends on the main-axis */
+            flex-basis: 100px;
+        }
+        
+        .red{
+            /* align-self changes the alignment of the item */
+            align-self: flex-start;
+            height: 20px;
+            background-color: red;
+        }
+        .orange{
+            background-color: orange;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .green{
+            /* Order modifies the order of the flex items, by default is 0 and goes from left to right and from smaller to bigger*/
+            /* Goes after all items except blue */
+            order: 1;
+            background-color: green;
+        }
+        .blue{
+            
+            /* Goes fater all items */
+            order: 2;
+            background-color: blue;
+        }
+        .indigo{
+            background-color: indigo;
+        }
+        .purple{
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red">Red</div>
+        <div class="orange">Orange</div>
+        <div class="yellow">Yellow</div>
+        <div class="green">Green</div>
+        <div class="blue">Blue</div>
+        <div class="indigo">Indigo</div>
+        <div class="purple">Purple</div>
+    </div>
+    
+</body>
+</html>
